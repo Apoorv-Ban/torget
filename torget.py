@@ -82,7 +82,7 @@ def SearchList(namelist , datelist ):
     listsize = len(namelist)
     rlist = []
     
-    for x in range(0,listsize-2):
+    for x in range(0,listsize-1):
         if (str(namelist[x].text.strip()) == 'name'):
             x = x - 1
             continue
@@ -105,8 +105,7 @@ def PrintResult(printlist):
     os.system(wipe)
     print('Sno. Name Date')
     for x in range(0,len(printlist)-1):
-        
-        print( " # ",printlist[x]['num'] ," ==> ",printlist[x]['name'],"\t",printlist[x]['date'])
+        print( " # ",printlist[x]['num'] ," ==> ",printlist[x]['name'][0:-1],"\t",printlist[x]['date'])
         
     
     
@@ -207,8 +206,8 @@ def TorPage(torurl , name):
     soup = BeautifulSoup(response.text, 'html.parser')
     torlist = soup.findAll('ul', {'class' : 'list'})
     os.system(wipe)
-    print('#' + name)
-    print(' ' +torlist[2].text.strip() + '\n')
+    print('#' + name[0:-1])
+    print(' ' + torlist[2].text.strip() + '\n')
     print(' ' + torlist[1].text.strip() + '\n')
     print('# 1. Download')
     print('# 2 Open in Browser')
@@ -276,8 +275,8 @@ def menu():
     else:
         wipe = 'clear'
 
-    exit = True
-    while(exit):
+   
+    while(True):
         userinput = 0
         os.system(wipe)
         asciiGen()
@@ -298,10 +297,10 @@ def menu():
             print('# Please use accurate keywords and select appropriate categories in search for correct results')
             userinput = str(input("# Enter Keyword ==> "))
             SearchPage(userinput)
-        else:
+        elif(userinput == 3):
             os.system(wipe)
             print('# Thank you for using ')
-            exit = False
+            break;
         
 def checkconnection(url):
     try:
