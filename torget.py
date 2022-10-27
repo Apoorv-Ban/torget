@@ -34,8 +34,16 @@ def HomePage(url):
         datelist = soup.find_all(class_="coll-date")
         printlist = SplitList(namelist  , datelist)
         PrintResult(printlist)
+        print("\n")
+        print("-------------------------------------------------------------------------------------")
+        print("  Press 1 to Select a Torrent for Downloading , Press 2 to go back to main menu")
+        print("-------------------------------------------------------------------------------------")
+        print("\n")
         print('# 1. Select Torrent')
         print('# 2. Back to Menu')
+        print("\n")
+        print("\n")
+        
         userinput = int(input('# Enter Choice ==> '))
         if(userinput == 1 or userinput ==2):
             if(userinput == 1):
@@ -209,9 +217,16 @@ def TorPage(torurl , name):
     print('#' + name[0:-10])
     print(' ' + torlist[2].text.strip() + '\n')
     print(' ' + torlist[1].text.strip() + '\n')
+    print('\n')
+    print('-------------------------------------------------------------------------------------------------------')
+    print('Press 1 to download using a torrent client, Press 2 to Open in Browser, Press 3 to go back to main menu')
+    print('-------------------------------------------------------------------------------------------------------')
+    print('\n')
     print('# 1. Download')
     print('# 2 Open in Browser')
     print('# 3. Back to Menu')
+ 
+ 
     userinput = int(input(" # Enter your choice ==> "))
     if(userinput == 1):
         MagnetDownload(soup)
@@ -247,7 +262,15 @@ def SearchPage(keyword):
                 
                 searchlist = SearchList(namelist  , datelist )
                 PrintResult(searchlist)
+                
+                
 
+
+                print("\n")
+                print("-------------------------------------------------------------------------------------")
+                print("Press 1 to Search Again Press 2 ,To select a torrent, 3 To go back to main menu")
+                print("-------------------------------------------------------------------------------------")
+                print("\n")
                 print("# 1. Search again")
                 print("# 2. Continue")
                 print('# 3. Go back to Menu')
