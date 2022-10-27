@@ -223,7 +223,7 @@ def TorPage(torurl , name):
     print('-------------------------------------------------------------------------------------------------------')
     print('\n')
     print('# 1. Download')
-    print('# 2 Open in Browser')
+    print('# 2. Open in Browser')
     print('# 3. Back to Menu')
  
  
