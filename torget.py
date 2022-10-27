@@ -105,7 +105,7 @@ def PrintResult(printlist):
     os.system(wipe)
     print('Sno. Name Date')
     for x in range(0,len(printlist)-1):
-        print( " # ",printlist[x]['num'] ," ==> ",printlist[x]['name'][0:-1],"\t",printlist[x]['date'])
+        print( " # ",printlist[x]['num'] ," ==> ",printlist[x]['name'][0:-10],"\t",printlist[x]['date'])
         
     
     
@@ -206,7 +206,7 @@ def TorPage(torurl , name):
     soup = BeautifulSoup(response.text, 'html.parser')
     torlist = soup.findAll('ul', {'class' : 'list'})
     os.system(wipe)
-    print('#' + name[0:-1])
+    print('#' + name[0:-10])
     print(' ' + torlist[2].text.strip() + '\n')
     print(' ' + torlist[1].text.strip() + '\n')
     print('# 1. Download')
