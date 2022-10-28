@@ -28,7 +28,7 @@ Follow me on
 ## Release
 ### v1.0
 - First release containing a simple browse option to fetch the homepage of [1337x.to](https://1337x.to/home)
-- A seach option to get torrents using custom keywords (*keywords needs to be accurate and the selections of parameters too to get the best result*)
+- A search option to get torrents using custom keywords (*keywords needs to be accurate and the selections of parameters too to get the best result*)
 - Magnet Download - After selecting the desired torrent people can directly add the magnet link to your torrent client.
 
 ### Bugs 
