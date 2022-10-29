@@ -24,6 +24,7 @@ Follow me on
 - A torrent client is needed to download torrents tested with [qbit torrent](https://www.qbittorrent.org/download.php) 
 - Developed on Python 3.10.8 
 - There is no **DNS** or **VPN** included in the script [1337x.to](https://1337x.to/home) works  on your internet connection.
+- You can use [CloudFare](https://1.1.1.1/) as a dns its great and easy
 
 ## Release
 ### v1.0
