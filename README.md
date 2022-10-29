@@ -1,5 +1,6 @@
 # TorGet 
 ![Alt text](./Assets/logo.ico "a title")
+
 A simple cli based application to get the best torrent for your favorate application without all the hassal and irritating pop ups from **https://1337x.to** 
 *By Apoorv Bandyopadhyay*
 Follow me on
